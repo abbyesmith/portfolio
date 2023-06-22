@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0)
+}
+
+body {
+  font-family: "PT Sans";
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +48,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/***NAVBAR************************************************************/
+.logo{
+  height: 4rem;
+}
+
+/***MENU LINKS************************************************************/
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+  font-size: small;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark)
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-top: 0.1875rem solid var(--primary-orange)
+}
+
+.navbar-nav > li > a:hover{
+  color: var(--primary-orange) !important
+}
+
+.navbar-toggler-icon{
+  color: var(--primary-white) !important
 }
