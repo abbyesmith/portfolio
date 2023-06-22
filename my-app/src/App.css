@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans" !important;
 }
 
 .App {
@@ -165,4 +165,30 @@ nav ul li {
   transition: .2s ease-in-out;
   margin: 2rem;
 
+}
+
+/* ABOUT ME */
+
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.profile-img{
+  width: 16rem;
+  border-radius: 5%;
+  padding: .3rem;
+  border: 1px solid var(--primary-orange);
+}
+
+.about-header{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468){
+  .profile-img{
+    width: 10rem;
+  }
 }
