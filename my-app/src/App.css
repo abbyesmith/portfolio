@@ -10,6 +10,7 @@
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000;
 }
 
 body {
@@ -109,7 +110,7 @@ nav ul li {
 /***HEADER****************************************************************/
 .header-wraper {
   position: relative;
-  background: url(wall-and-laptop-background.jpg) no-repeat;
+  background: url(/Users/abbysmith/Development/code/portfolio/my-app/src/images/wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -215,6 +216,7 @@ nav ul li {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background-color: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -249,8 +251,8 @@ nav ul li {
   margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
-  background: var(--primary-grey);
-  z-index: 1;
+  background: var(--primary-orange);
+  /* z-index: 1; */
 }
 
 .timeline-block{
@@ -276,7 +278,7 @@ nav ul li {
   border: 0.3125rem solid var(--primary-orange);
   background: var(--primary-orange);
   margin-top: 0.625rem;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .timeline-content{
@@ -311,4 +313,145 @@ nav ul li {
     width: 100%;
   }
 
+}
+
+/* Projects */
+.project-wrapper{
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.project-image{
+  height: 10rem;
+  width: 17rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+
+}
+
+.project-image-box{
+  position: relative;
+  margin: 1rem;
+}
+
+.image-box-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Overflow box */
+.overflow{
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 17rem;
+  height: 10rem;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+  top: 0;
+
+}
+
+.project-image-box:hover .overflow{
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+  
+}
+.project-info{
+  position: absolute;
+  opacity: 0;
+  /* margin-left: -8rem;
+  margin-top: 3.6rem; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  background-color: var(--primary-light-grey);
+  border-radius: 50%;
+}
+
+.project-image-box:hover .project-info {
+  opacity: 70%;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-demo-video {
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: hidden;
+}
+
+.popupbox {
+  position: left;
+  /* z-index: 99999; */
+  background-color: var(--primary-light-grey);
+}
+
+.hyperlink {
+  cursor: pointer;
+  color: var(--primary-orange)
+}
+
+.hyperlink:hover {
+  cursor: pointer;
+  color: var(--primary-red)
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary-dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow-y: auto;
+}
+
+.project-popupbox {
+  position: relative;
+  /* top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto; */
+  border: none;
+  border-radius: 4px;
+  padding: 20px;
+  background: var(--primary-white);
+  -webkit-animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--primary-dark-grey);
+  cursor: pointer;
+}
+
+.popupbox{
+  max-width: 800px;
+  margin: 0 auto;
 }

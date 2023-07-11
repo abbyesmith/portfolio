@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/Users/abbysmith/Development/code/portfolio/my-app/src/LogoPlaceholder.webp'
+import logo from '../images/LogoPlaceholder.webp'
 // REACT FONTAWESOME IMPORT
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import {faBars} from '@fortawesome/react-fontawesome'

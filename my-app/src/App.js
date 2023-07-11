@@ -5,6 +5,7 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Services from './components/Services';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 // Come back to tsParticles
 
 
@@ -16,6 +17,7 @@ function App() {
       <AboutMe/>
       <Services/>
       <Experience/>
+      <Projects/>
     </>
   );
 }
