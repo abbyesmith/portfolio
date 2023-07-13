@@ -2,7 +2,7 @@ import React from "react";
 //Think about adding icons that represent the skills, in the services videos, styling in part 2//
 const Services = () => {
     return(
-        <div className="services">
+        <div id = "skills" className="services">
             <h1 className="py-5">My Services</h1>
                 <div className="container">
                     <div className="row">

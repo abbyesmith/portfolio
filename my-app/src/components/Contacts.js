@@ -47,7 +47,7 @@ const Contacts = () => {
 
 
     return (
-        <div className='contacts'>
+        <div id = "contact" className='contacts'>
             <div className='text-center'>
                 <h1>Contact Me</h1>
                 <p>Please fill out the form to reach out and begin a conversation about your software development needs.</p>

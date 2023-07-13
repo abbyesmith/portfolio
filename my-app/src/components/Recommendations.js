@@ -4,7 +4,7 @@ import RecommedationsCarousel from './RecommedationsCarousel'
 
 const Recommendations = () => {
     return (
-        <div className='testimonials'>
+        <div id = "references" className='testimonials'>
             <h1>Recommendations</h1>
             <div className='container'>
                 <div className='testimonials-content'>
