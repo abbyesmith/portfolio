@@ -7,11 +7,14 @@
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666;
   --primary-orange: #f9ab00;
+  --primary-hover-orange: #b67d01;
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-green: green;
   --primary-black: #000;
   --primary-transparent-black: rgba(0,0,0,0.7)
+
 }
 
 body {
@@ -519,4 +522,107 @@ nav ul li {
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important;
+}
+
+/* Contact Me */
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p{
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/* Inputs for Contact form */
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--primary-grey);
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 2%;
+  color: var(--primary-dark-grey);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+  /* margin-bottom: 1.5rem; */
+  margin-top: 1rem !important;
+  padding-left: 0.5rem !important
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: var(--primary-white);
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea{
+  height: 14rem !important;
+  /* margin: 2rem 0; */
+
+}
+
+.btn-contact{
+  margin: 1rem 0 0 0;
+  width: 100%;
+  border-radius: 2%;
+  background: var(--primary-orange);
+  /* transition: none !important; */
+}
+
+.btn-contact:hover{
+  background: var(--primary-hover-orange)
+}
+
+.line{
+  position: relative;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+  /* margin-top: -0.8rem */
+}
+
+input:focus+.line, textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out ;
+}
+
+input.form-control {
+  margin: -0.2rem 0;
+}
+
+textarea.form-control {
+  margin: -0.2rem 0;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+/* Media */
+@media(max-width: 768px){
+  .contacts{
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+  .contacts p{
+    padding: 0 1rem;
+  }
 }

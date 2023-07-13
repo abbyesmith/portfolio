@@ -7,6 +7,8 @@ import Services from './components/Services';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Recommendations from './components/Recommendations';
+import Contacts from './components/Contacts';
+
 // Come back to tsParticles
 
 
@@ -20,6 +22,7 @@ function App() {
       <Experience/>
       <Projects/>
       <Recommendations/>
+      <Contacts/>
     </>
   );
 }
