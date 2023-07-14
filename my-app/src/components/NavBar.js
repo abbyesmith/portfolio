@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/LogoPlaceholder.webp'
+import logo from '../images/logo.png'
 import { Link} from 'react-scroll'
 // REACT FONTAWESOME IMPORT
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -12,8 +12,7 @@ const NavBar = () => {
                 <a className="navbar-brand" href="#"><img className = "logo" src={logo} alt = "logo"/></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                 ☰
-                    {/* <FontAwesomeIcon icon={faBars} />                 */}
-                </button>
+            </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
@@ -24,7 +23,7 @@ const NavBar = () => {
                             <Link smooth = {true} to="about" offset = {-110} className="nav-link" href="#">About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="skills" offset = {-110} className="nav-link" href="#">Skills</Link>
+                            <Link smooth = {true} to="skills" offset = {-110} className="nav-link" href="#">Languages</Link>
                         </li>
                         <li className="nav-item">
                             <Link smooth = {true} to="experience" offset = {-110} className="nav-link" href="#">Experience</Link>
@@ -36,7 +35,7 @@ const NavBar = () => {
                             <Link smooth = {true} to="references" offset = {-110} className="nav-link" href="#">References</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="contact" offset = {-110} className="nav-link" href="#">Contact</Link>
+                            <Link smooth = {true} to="contact" offset = {-70} className="nav-link" href="#">Contact</Link>
                         </li>
                     </ul>
                 </div>

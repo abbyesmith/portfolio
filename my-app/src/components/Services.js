@@ -3,31 +3,49 @@ import React from "react";
 const Services = () => {
     return(
         <div id = "skills" className="services">
-            <h1 className="py-5">My Services</h1>
+            <h1 className="py-5">Languages</h1>
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-3 col-sm-6">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className="box">
-                                <h3>Web Design</h3>
-                                <p>Web design talk</p>
+                                <h3>JavaScript</h3>
+                                {/* <p>Web design talk</p> */}
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6">
+                        <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className="box">
-                                <h3>Web Development</h3>
-                                <p>Web dev talk</p>
+                                <h3>React</h3>
+                                {/* <p>Web dev talk</p> */}
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6">
+                        <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className="box">
-                                <h3>Another Thing</h3>
-                                <p>Keep talking</p>
+                                <h3>Python</h3>
+                                {/* <p>Keep talking</p> */}
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-3 col-sm-6">
+                        <div className="col-lg-3 col-md-3 col-sm-12">
                             <div className="box">
-                                <h3>Thing 4</h3>
-                                <p>Talk Talk</p>
+                                <h3>Flask</h3>
+                                {/* <p>Talk Talk</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className="box">
+                                <h3>SQL</h3>
+                                {/* <p>Keep talking</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className="box">
+                                <h3>HTML</h3>
+                                {/* <p>Keep talking</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-sm-12">
+                            <div className="box">
+                                <h3>CSS</h3>
+                                {/* <p>Keep talking</p> */}
                             </div>
                         </div>
                     </div>

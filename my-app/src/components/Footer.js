@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-scroll'
 import { 
     FacebookShareButton,
     FacebookIcon,
@@ -22,7 +23,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className='d-flex'>
-                            <a href="abby.e.smith.85@gmail.com">
+                            <a href="mailto:abby.e.smith.85@gmail.com">
                                 abby.e.smith.85@gmail.com
                             </a>
                         </div>
@@ -30,18 +31,14 @@ const Footer = () => {
                     <div className='col-lg-3 col-md-2 col-sm-6'>
                         <div className='row'>
                             <div className='col'>
-                                <a className='footer-nav'>Home</a>
-                                <br />
-                                <a className='footer-nav'>About Me</a>
-                                <br />
-                                <a className='footer-nav'>Skills</a>
+                                <Link smooth = {true} to="home" offset = {0} className="nav-link" href="#">Home</Link>
+                                <Link smooth = {true} to="about" offset = {-110} className="nav-link" href="#">About Me</Link>
+                                <Link smooth = {true} to="skills" offset = {-110} className="nav-link" href="#">Languages</Link>
                             </div>
                             <div className='col'>
-                                <a className='footer-nav'>Experience</a>
-                                <br />
-                                <a className='footer-nav'>Portfolio</a>
-                                <br />
-                                <a className='footer-nav'>References</a>
+                                <Link smooth = {true} to="experience" offset = {-110} className="nav-link" href="#">Experience</Link>
+                                <Link smooth = {true} to="portfolio" offset = {-110} className="nav-link" href="#">Portfolio</Link>
+                                <Link smooth = {true} to="references" offset = {-110} className="nav-link" href="#">References</Link>
                             </div>
                         </div>
                     </div>
