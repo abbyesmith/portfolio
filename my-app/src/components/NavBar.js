@@ -41,22 +41,22 @@ const NavBar = () => {
                             <Link smooth = {true} to="home" offset = {0} className="nav-link" href="#" onClick={handleLinkClick}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="about" offset = {-110} className="nav-link" href="#" onClick={handleLinkClick}>About Me</Link>
+                            <Link smooth = {true} to="about" offset = {-80} className="nav-link" href="#" onClick={handleLinkClick}>About Me</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="skills" offset = {-110} className="nav-link" href="#" onClick={handleLinkClick}>Languages</Link>
+                            <Link smooth = {true} to="skills" offset = {-80} className="nav-link" href="#" onClick={handleLinkClick}>Languages</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="experience" offset = {-110} className="nav-link" href="#" onClick={handleLinkClick}>Experience</Link>
+                            <Link smooth = {true} to="experience" offset = {-80} className="nav-link" href="#" onClick={handleLinkClick}>Experience</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="portfolio" offset = {-110} className="nav-link" href="#" onClick={handleLinkClick}>Portfolio</Link>
+                            <Link smooth = {true} to="portfolio" offset = {-80} className="nav-link" href="#" onClick={handleLinkClick}>Portfolio</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="references" offset = {-110} className="nav-link" href="#" onClick={handleLinkClick}>References</Link>
+                            <Link smooth = {true} to="references" offset = {-75} className="nav-link" href="#" onClick={handleLinkClick}>References</Link>
                         </li>
                         <li className="nav-item">
-                            <Link smooth = {true} to="contact" offset = {-70} className="nav-link" href="#" onClick={handleLinkClick}>Contact</Link>
+                            <Link smooth = {true} to="contact" offset = {-30} className="nav-link" href="#" onClick={handleLinkClick}>Contact</Link>
                         </li>
                     </ul>
                 </div>

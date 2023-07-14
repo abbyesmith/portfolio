@@ -90,7 +90,7 @@ nav ul li {
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 6rem;
+  height: 4rem;
 }
 
 @media (max-width:768px){
@@ -273,7 +273,8 @@ nav ul li {
 
 /* Experience */
 .experience{
-  padding: 0.7rem
+  padding: 0.7rem;
+  background: var(--primary-grey)
 }
 .experience-wrapper {
   position: relative;
@@ -523,19 +524,39 @@ nav ul li {
 
 /* Recommendations */
 .testimonials{
-  background-image: url(/Users/abbysmith/Development/code/portfolio/my-app/src/images/testimonials-bg.jpg);
+  background-image: url(/Users/abbysmith/Development/code/portfolio/my-app/src/images/Connections.jpg);
   background-size: cover;
   background-color: var(--primary-black);
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   margin-bottom: 0;
   width: 100%;
 }
 
+/* .testimonials{
+  position: relative;
+  height: 100vh;
+}
+.testimonials:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  opacity: 0.2;
+  background-image: url(/Users/abbysmith/Development/code/portfolio/my-app/src/images/Connections.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+} */
+
 .testimonials h1 {
   color: var(--primary-white);
-  padding: 3rem 0;
+  padding-top: 3rem;
   text-transform: uppercase;
+  background: var(--primary-transparent-black);
 }
 
 .testimonials-content {
@@ -553,7 +574,7 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
-  padding-bottom: 8%;
+  padding-bottom: 1%;
   padding-left: 5%;
   padding-right: 5%;
   /* height: 17.85rem; */
@@ -586,6 +607,10 @@ nav ul li {
   margin-top: 3% !important;
 }
 
+.control-dots{
+  margin-top: 0.5rem;
+}
+
 /* Contact Me */
 .contacts {
   background: var(--primary-dark);
@@ -602,6 +627,7 @@ nav ul li {
   color: var(--primary-light-grey);
   font-size: 1.2rem;
 }
+
 
 /* Inputs for Contact form */
 .contacts input, .contacts textarea {
