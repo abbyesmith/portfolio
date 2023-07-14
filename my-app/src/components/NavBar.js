@@ -22,13 +22,8 @@ const NavBar = () => {
                     <img className = "logo" src={logo} alt = "logo"/>
                 </a>
             <button 
-                // className="navbar-toggler" 
                 className={`navbar-toggler ${isNavOpen ? '' : 'collapsed'}`}
-                type="button" 
-                // data-toggle="collapse" 
-                // data-target="#navbarSupportedContent" 
-                // aria-controls="navbarSupportedContent" 
-                // aria-expanded="false" 
+                type="button"  
                 onClick={toggleNav}
                 aria-controls="navbarSupportedContent"
                 aria-expanded={isNavOpen}
