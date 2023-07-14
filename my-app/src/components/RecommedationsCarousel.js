@@ -6,6 +6,7 @@ import taylor from "../images/Taylor.png"
 import ben from "../images/Ben.png"
 import matthew from "../images/Matthew.jpg"
 import judy from "../images/Judy.png"
+import matt from "../images/Matt.png"
 
 const RecommedationsCarousel = () => {
     return (
@@ -35,10 +36,10 @@ const RecommedationsCarousel = () => {
                 </div>    
             </>
             <>
-                <img src={ben} alt="Ben Tryon"/>
+                <img src={matthew} alt="Matthew Clark"/>
                 <div className='myCarousel'>
-                    <h3>Ben Tryon</h3>
-                    <p>Abby has a thorough understanding of React.js, Python and SQLAlchemy. She helped problem solve table-relationship bugs and event handling in a full stack application that pivoted numerous times. </p>        
+                    <h3>Matthew Clark</h3>
+                    <p>As a programmer, learner, and team member, Abby always proves to be innovative, creative, and supportive. Anyone with the chance to work with her will only benefit from her presence of mind, and willingness to step up. I’d work with her in a heartbeat on any project that gave that opportunity. </p>
                 </div>
             </>
             <>
@@ -49,11 +50,17 @@ const RecommedationsCarousel = () => {
                 </div>
             </>
             <>
-                <img src={matthew} alt="Matthew Clark"/>
+                <img src={ben} alt="Ben Tryon"/>
                 <div className='myCarousel'>
-                    <h3>Matthew Clark</h3>
-                    <p>As a programmer, learner, and team member, Abby always proves to be innovative, creative, and supportive. Anyone with the chance to work with her will only benefit from her presence of mind, and willingness to step up. I’d work with her in a heartbeat on any project that gave that opportunity. </p>
-
+                    <h3>Ben Tryon</h3>
+                    <p>Abby has a thorough understanding of React.js, Python and SQLAlchemy. She helped problem solve table-relationship bugs and event handling in a full stack application that pivoted numerous times. </p>        
+                </div>
+            </>
+            <>
+                <img src={matt} alt="Matt Daniels"/>
+                <div className='myCarousel'>
+                    <h3>Matt Daniels</h3>
+                    <p>She puts in all the right ingredients, mixes it to what seems like perfection, then adds that extra special magical touch that you didn't realize was missing or needed until she made it happen. </p>
                 </div>
             </>
         </Carousel>
