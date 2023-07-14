@@ -107,8 +107,9 @@ nav ul li {
   color: var(--primary-blue) !important
 }
 
-.navbar-toggler-icon{
-  color: var(--primary-white) !important
+.navbar-toggler{
+  color: var(--primary-white) !important;
+  border-color: var(--primary-white)!important;
 }
 
 /* Header */
@@ -300,6 +301,7 @@ nav ul li {
   /* transition: none !important; */
   padding: 0.125rem 1rem;
   width: auto;
+  color: var(--primary-white)
 }
 
 .resume-btn:hover{

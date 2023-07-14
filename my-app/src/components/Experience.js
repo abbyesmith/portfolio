@@ -23,8 +23,8 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <h3>2007-2011</h3>
-                        <p>Attended Radford University and obtained a BS in mathematics. Graduated second in the program.</p>
+                        <h3>2011</h3>
+                        <p>Graduated Radford University with a BS in mathematics. Graduated second in the program.</p>
                     </div>
                 </div>
                 <div className="timeline-block timeline-block-left">
@@ -37,11 +37,18 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
+                        <h3>2015</h3>
+                        <p>Earned my Masters in Education from Radford University.</p>
+                    </div>
+                </div>
+                <div className="timeline-block timeline-block-left">
+                    <div className="marker"></div>
+                    <div className="timeline-content">
                         <h3>2022-2023</h3>
                         <p>Wrote and edited digital curriculum for asynchronous learning.</p>
                     </div>
                 </div>
-                <div className="timeline-block timeline-block-left">
+                <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
                         <h3>2023</h3>
