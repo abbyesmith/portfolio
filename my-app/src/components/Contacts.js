@@ -6,14 +6,14 @@ const Contacts = () => {
 
     const [succsesMessage, setSuccessMessage] = useState ("")
 
-    const formatPhoneNumber = (phoneNumber) => {
-        const cleaned = ('' + phoneNumber).replace(/\D/g, '');
-        const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
-        if (match) {
-            return `(${match[1]}) ${match[2]}-${match[3]}`;
-        }
-        return phoneNumber;
-    };
+    // const formatPhoneNumber = (phoneNumber) => {
+    //     const cleaned = ('' + phoneNumber).replace(/\D/g, '');
+    //     const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    //     if (match) {
+    //         return `(${match[1]}) ${match[2]}-${match[3]}`;
+    //     }
+    //     return phoneNumber;
+    // };
 
     const serviceID = "service_d26dps5"
     const templateID = "template_sa1wy9b"
@@ -25,11 +25,6 @@ const Contacts = () => {
         e.preventDefault();
 
         if (form.current.checkValidity()){
-            // const phoneNumberInput = form.current.elements.phone;
-            // phoneNumberInput.value = formatPhoneNumber(phoneNumberInput.value);
-            // const formData = new FormData(form.current);
-            // const formattedPhoneNumber = formatPhoneNumber(formData.get('phone'));
-            // formData.set('phone', formattedPhoneNumber);
 
             emailjs.sendForm(serviceID, templateID, form.current, userID)
                 .then((result) => {
@@ -105,7 +100,7 @@ const Contacts = () => {
                                 name="message"
                                 required
                             ></textarea>
-                            <button type="submit" class="btn-contact">Contact Me</button>
+                            <button type="submit" className="btn-contact">Contact Me</button>
 
                         </div>
                     </div>

@@ -5,6 +5,7 @@ import pythonQuest from '../images/Quest.png';
 import pythonQuestDemo from '../images/QuestDemo.mp4';
 import review from '../images/Review.png';
 import reviewDemo from '../images/ReviewDemo.mp4';
+import portfolioSite from '../images/PortfolioScreenshot.png';
 import info from '../images/infomationIcon.png';
 import Modal from 'react-modal';
 
@@ -73,6 +74,27 @@ const Projects = () => {
                     https://github.com/abbyesmith/Algebra-1-Course-Review-Phase-2-Project
                     </a>
                 </div>
+        )
+        } else if (project === 'portfolio') {
+            content = (
+                <div className='popupbox'>
+                    <h1>Portfolio (2023)</h1>
+                    <img className="project-image" src={portfolioSite} alt="Portfolio Screenshot" />
+                    <p>Abby Smith's software engineering portfolio website.</p>
+                    <b>Skills Used:</b>
+                    <ul>
+                        <li>Utilized JavaScript and React to create interactive features including downloadable content and popup boxes</li>
+                        <li>Imports React, useEffect, and useState</li>
+                        <li>Emailjs used for the contact section</li>
+                    </ul>
+                    <b>GitHub:</b>{' '}
+                    <a className="hyperlink" onClick={() => window.open('https://github.com/abbyesmith/portfolio')}>
+                    https://github.com/abbyesmith/portfolio
+                    </a>
+                    <br/>
+                    <b>Link:</b>{''}
+                    <a className="hyperlink" onClick={() => window.open('https://abbyesmith.github.io/portfolio/')}>https://abbyesmith.github.io/portfolio/</a>
+                </div>
         )}
 
         setSelectedProject(content);
@@ -94,7 +116,11 @@ const Projects = () => {
                 <div className="overflow"></div>
                 <img className="project-info" src={info} alt="information icon" />
             </div>
-
+            <div className="project-image-box" onClick={() => openModal('portfolio')}>
+                <img className="project-image" src={portfolioSite} alt="Portfolio" />
+                <div className="overflow"></div>
+                <img className="project-info" src={info} alt="information icon" />
+            </div>
             <div className="project-image-box" onClick={() => openModal('pythonQuest')}>
                 <img className="project-image" src={pythonQuest} alt="CLI Game Python Quest Screenshot" />
                 <div className="overflow"></div>
